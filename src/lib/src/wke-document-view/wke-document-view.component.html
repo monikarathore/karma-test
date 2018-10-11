@@ -1,0 +1,14 @@
+<h1 *ngIf="displayVar; else elseBlock">
+  I am in if condition
+</h1>
+<ng-template #elseBlock>
+    i am in else block
+</ng-template>
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">red</div>
+  <div *ngSwitchCase="'blue'">blue</div>
+  <div *ngSwitchCase="'pink'">pink</div>
+  <div *ngSwitchCase="'white'">white</div>
+  <div *ngSwitchDefault>Pick again</div>
+</div>
